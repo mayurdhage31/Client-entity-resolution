@@ -1,0 +1,719 @@
+{
+  "data_classification": "SYNTHETIC",
+  "scope": "training_only",
+  "missed_true_duplicate_pairs": 26,
+  "interpretation": "Counts overlap across fields/rules. Missing values are failures, not agreements. Diagnostic labels and pair lists are never used by candidate generation.",
+  "observed_field_state_counts": {
+    "company_name": {
+      "different_nonempty": 14,
+      "equal_nonempty": 7,
+      "one_missing": 5
+    },
+    "registration_id": {
+      "both_missing": 1,
+      "different_nonempty": 2,
+      "equal_nonempty": 3,
+      "one_missing": 20
+    },
+    "address": {
+      "both_missing": 2,
+      "different_nonempty": 2,
+      "equal_nonempty": 14,
+      "one_missing": 8
+    },
+    "city": {
+      "different_nonempty": 1,
+      "equal_nonempty": 21,
+      "one_missing": 4
+    },
+    "postcode": {
+      "equal_nonempty": 19,
+      "one_missing": 7
+    },
+    "country": {
+      "equal_nonempty": 19,
+      "one_missing": 7
+    }
+  },
+  "exact_rule_failure_counts": {
+    "country_registration": {
+      "country:one_missing": 7,
+      "registration_id:both_missing": 1,
+      "registration_id:different_nonempty": 2,
+      "registration_id:one_missing": 20
+    },
+    "country_postcode_name_prefix": {
+      "company_name_prefix:different_nonempty": 9,
+      "company_name_prefix:one_missing": 5,
+      "country:one_missing": 7,
+      "postcode:one_missing": 7
+    },
+    "country_city_name_token": {
+      "city:different_nonempty": 1,
+      "city:one_missing": 4,
+      "country:one_missing": 7,
+      "informative_name_token:missing_or_uninformative": 5,
+      "informative_name_token:no_shared_token": 11
+    }
+  },
+  "missed_pair_details": [
+    {
+      "record_id_left": "rec_0dc5d7d9f5bc40c089dfaf7c55492107",
+      "record_id_right": "rec_ab1ead7478e94ae9a9af6d283665de1b",
+      "normalized_field_states": {
+        "company_name": "one_missing",
+        "registration_id": "one_missing",
+        "address": "different_nonempty",
+        "city": "equal_nonempty",
+        "postcode": "equal_nonempty",
+        "country": "equal_nonempty",
+        "company_name_prefix": "one_missing",
+        "informative_name_token": "missing_or_uninformative"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "registration_id:one_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "company_name_prefix:one_missing"
+        ],
+        "country_city_name_token": [
+          "informative_name_token:missing_or_uninformative"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_130f0872966f4d4783214b1455928cd5",
+      "record_id_right": "rec_ef180725f10c48c0a3b55bfb128e92ad",
+      "normalized_field_states": {
+        "company_name": "different_nonempty",
+        "registration_id": "one_missing",
+        "address": "different_nonempty",
+        "city": "equal_nonempty",
+        "postcode": "equal_nonempty",
+        "country": "equal_nonempty",
+        "company_name_prefix": "different_nonempty",
+        "informative_name_token": "no_shared_token"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "registration_id:one_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "company_name_prefix:different_nonempty"
+        ],
+        "country_city_name_token": [
+          "informative_name_token:no_shared_token"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_185c39ed1d0647359ccee87319a1a2d1",
+      "record_id_right": "rec_ae70f6f5015a449ba86cd27dfd597efd",
+      "normalized_field_states": {
+        "company_name": "equal_nonempty",
+        "registration_id": "equal_nonempty",
+        "address": "equal_nonempty",
+        "city": "equal_nonempty",
+        "postcode": "equal_nonempty",
+        "country": "one_missing",
+        "company_name_prefix": "equal_nonempty",
+        "informative_name_token": "equal_nonempty"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "country:one_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "country:one_missing"
+        ],
+        "country_city_name_token": [
+          "country:one_missing"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_1f0b1094597c40cf90ad9cd5ddbb5298",
+      "record_id_right": "rec_f4de6a696494446abf005dab4a490f80",
+      "normalized_field_states": {
+        "company_name": "different_nonempty",
+        "registration_id": "one_missing",
+        "address": "equal_nonempty",
+        "city": "equal_nonempty",
+        "postcode": "one_missing",
+        "country": "equal_nonempty",
+        "company_name_prefix": "different_nonempty",
+        "informative_name_token": "no_shared_token"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "registration_id:one_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "postcode:one_missing",
+          "company_name_prefix:different_nonempty"
+        ],
+        "country_city_name_token": [
+          "informative_name_token:no_shared_token"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_27ad8d5198a14e4fb03b693479ab56d1",
+      "record_id_right": "rec_355cca9cfb6b41dcaa7f7e0685695f97",
+      "normalized_field_states": {
+        "company_name": "different_nonempty",
+        "registration_id": "one_missing",
+        "address": "equal_nonempty",
+        "city": "one_missing",
+        "postcode": "one_missing",
+        "country": "equal_nonempty",
+        "company_name_prefix": "equal_nonempty",
+        "informative_name_token": "equal_nonempty"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "registration_id:one_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "postcode:one_missing"
+        ],
+        "country_city_name_token": [
+          "city:one_missing"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_2e13418d68ab40ea897ec6d1081fc6dc",
+      "record_id_right": "rec_76876c624c61445eba7e5d9405d1fb63",
+      "normalized_field_states": {
+        "company_name": "equal_nonempty",
+        "registration_id": "one_missing",
+        "address": "one_missing",
+        "city": "equal_nonempty",
+        "postcode": "equal_nonempty",
+        "country": "one_missing",
+        "company_name_prefix": "equal_nonempty",
+        "informative_name_token": "equal_nonempty"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "country:one_missing",
+          "registration_id:one_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "country:one_missing"
+        ],
+        "country_city_name_token": [
+          "country:one_missing"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_33ece6b1fcfd4547abdce0dabe0bbddd",
+      "record_id_right": "rec_e98965f22bbf4e3584acb57d0b3d6dc9",
+      "normalized_field_states": {
+        "company_name": "one_missing",
+        "registration_id": "one_missing",
+        "address": "equal_nonempty",
+        "city": "equal_nonempty",
+        "postcode": "equal_nonempty",
+        "country": "equal_nonempty",
+        "company_name_prefix": "one_missing",
+        "informative_name_token": "missing_or_uninformative"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "registration_id:one_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "company_name_prefix:one_missing"
+        ],
+        "country_city_name_token": [
+          "informative_name_token:missing_or_uninformative"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_355cca9cfb6b41dcaa7f7e0685695f97",
+      "record_id_right": "rec_89f90de9f7984131a885a7b410372a5c",
+      "normalized_field_states": {
+        "company_name": "different_nonempty",
+        "registration_id": "one_missing",
+        "address": "equal_nonempty",
+        "city": "one_missing",
+        "postcode": "one_missing",
+        "country": "equal_nonempty",
+        "company_name_prefix": "equal_nonempty",
+        "informative_name_token": "equal_nonempty"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "registration_id:one_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "postcode:one_missing"
+        ],
+        "country_city_name_token": [
+          "city:one_missing"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_355cca9cfb6b41dcaa7f7e0685695f97",
+      "record_id_right": "rec_8af09ec34b724a7c8f1c3fa070000009",
+      "normalized_field_states": {
+        "company_name": "different_nonempty",
+        "registration_id": "one_missing",
+        "address": "equal_nonempty",
+        "city": "one_missing",
+        "postcode": "one_missing",
+        "country": "equal_nonempty",
+        "company_name_prefix": "equal_nonempty",
+        "informative_name_token": "no_shared_token"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "registration_id:one_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "postcode:one_missing"
+        ],
+        "country_city_name_token": [
+          "city:one_missing",
+          "informative_name_token:no_shared_token"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_38227b0d81ee40e48a2b466efc9dc0d0",
+      "record_id_right": "rec_8bbf1b30937242e6af206a9df9d18507",
+      "normalized_field_states": {
+        "company_name": "one_missing",
+        "registration_id": "one_missing",
+        "address": "both_missing",
+        "city": "equal_nonempty",
+        "postcode": "equal_nonempty",
+        "country": "equal_nonempty",
+        "company_name_prefix": "one_missing",
+        "informative_name_token": "missing_or_uninformative"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "registration_id:one_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "company_name_prefix:one_missing"
+        ],
+        "country_city_name_token": [
+          "informative_name_token:missing_or_uninformative"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_533487f705d84c95b20b919968a57ee7",
+      "record_id_right": "rec_676a504cdbeb41e2b9a01a0b64657945",
+      "normalized_field_states": {
+        "company_name": "one_missing",
+        "registration_id": "one_missing",
+        "address": "one_missing",
+        "city": "equal_nonempty",
+        "postcode": "equal_nonempty",
+        "country": "equal_nonempty",
+        "company_name_prefix": "one_missing",
+        "informative_name_token": "missing_or_uninformative"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "registration_id:one_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "company_name_prefix:one_missing"
+        ],
+        "country_city_name_token": [
+          "informative_name_token:missing_or_uninformative"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_542d439361d94819851c5229a145676d",
+      "record_id_right": "rec_6548dfc876da47478faee492f7d9f605",
+      "normalized_field_states": {
+        "company_name": "equal_nonempty",
+        "registration_id": "different_nonempty",
+        "address": "equal_nonempty",
+        "city": "one_missing",
+        "postcode": "one_missing",
+        "country": "equal_nonempty",
+        "company_name_prefix": "equal_nonempty",
+        "informative_name_token": "equal_nonempty"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "registration_id:different_nonempty"
+        ],
+        "country_postcode_name_prefix": [
+          "postcode:one_missing"
+        ],
+        "country_city_name_token": [
+          "city:one_missing"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_7aa03208e6f44dcfa5f93ab95e5f310c",
+      "record_id_right": "rec_bb0084fa3822451b9b00f1a0d2ed3196",
+      "normalized_field_states": {
+        "company_name": "different_nonempty",
+        "registration_id": "one_missing",
+        "address": "equal_nonempty",
+        "city": "equal_nonempty",
+        "postcode": "equal_nonempty",
+        "country": "equal_nonempty",
+        "company_name_prefix": "different_nonempty",
+        "informative_name_token": "no_shared_token"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "registration_id:one_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "company_name_prefix:different_nonempty"
+        ],
+        "country_city_name_token": [
+          "informative_name_token:no_shared_token"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_963d101f40c847a382e847aef545dfb3",
+      "record_id_right": "rec_f23ed1fc9b9f4efeb75d2f0c472e2f3b",
+      "normalized_field_states": {
+        "company_name": "equal_nonempty",
+        "registration_id": "one_missing",
+        "address": "one_missing",
+        "city": "equal_nonempty",
+        "postcode": "equal_nonempty",
+        "country": "one_missing",
+        "company_name_prefix": "equal_nonempty",
+        "informative_name_token": "equal_nonempty"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "country:one_missing",
+          "registration_id:one_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "country:one_missing"
+        ],
+        "country_city_name_token": [
+          "country:one_missing"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_9924c5eefc8a4b1dba99267edca21033",
+      "record_id_right": "rec_ec9353cd8e9a4e7293fca973b6315c55",
+      "normalized_field_states": {
+        "company_name": "different_nonempty",
+        "registration_id": "one_missing",
+        "address": "one_missing",
+        "city": "equal_nonempty",
+        "postcode": "equal_nonempty",
+        "country": "equal_nonempty",
+        "company_name_prefix": "different_nonempty",
+        "informative_name_token": "no_shared_token"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "registration_id:one_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "company_name_prefix:different_nonempty"
+        ],
+        "country_city_name_token": [
+          "informative_name_token:no_shared_token"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_997e53d1b87a48968278e19459430636",
+      "record_id_right": "rec_f4de6a696494446abf005dab4a490f80",
+      "normalized_field_states": {
+        "company_name": "different_nonempty",
+        "registration_id": "one_missing",
+        "address": "equal_nonempty",
+        "city": "equal_nonempty",
+        "postcode": "one_missing",
+        "country": "equal_nonempty",
+        "company_name_prefix": "equal_nonempty",
+        "informative_name_token": "no_shared_token"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "registration_id:one_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "postcode:one_missing"
+        ],
+        "country_city_name_token": [
+          "informative_name_token:no_shared_token"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_a5fc6d0993c6467d9ead44fcf3952657",
+      "record_id_right": "rec_aba5d1c9035c4d03b664cafa0f6da751",
+      "normalized_field_states": {
+        "company_name": "different_nonempty",
+        "registration_id": "one_missing",
+        "address": "equal_nonempty",
+        "city": "equal_nonempty",
+        "postcode": "equal_nonempty",
+        "country": "equal_nonempty",
+        "company_name_prefix": "different_nonempty",
+        "informative_name_token": "no_shared_token"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "registration_id:one_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "company_name_prefix:different_nonempty"
+        ],
+        "country_city_name_token": [
+          "informative_name_token:no_shared_token"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_a62b3d30e0704db9898cd5fb14c62aba",
+      "record_id_right": "rec_e2495790517c4dec8d539417f5194ab9",
+      "normalized_field_states": {
+        "company_name": "one_missing",
+        "registration_id": "one_missing",
+        "address": "equal_nonempty",
+        "city": "equal_nonempty",
+        "postcode": "equal_nonempty",
+        "country": "equal_nonempty",
+        "company_name_prefix": "one_missing",
+        "informative_name_token": "missing_or_uninformative"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "registration_id:one_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "company_name_prefix:one_missing"
+        ],
+        "country_city_name_token": [
+          "informative_name_token:missing_or_uninformative"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_a86bf8b517cc476cab905645e0c2442e",
+      "record_id_right": "rec_ae70f6f5015a449ba86cd27dfd597efd",
+      "normalized_field_states": {
+        "company_name": "different_nonempty",
+        "registration_id": "equal_nonempty",
+        "address": "equal_nonempty",
+        "city": "equal_nonempty",
+        "postcode": "equal_nonempty",
+        "country": "one_missing",
+        "company_name_prefix": "different_nonempty",
+        "informative_name_token": "no_shared_token"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "country:one_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "country:one_missing",
+          "company_name_prefix:different_nonempty"
+        ],
+        "country_city_name_token": [
+          "country:one_missing",
+          "informative_name_token:no_shared_token"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_aba5d1c9035c4d03b664cafa0f6da751",
+      "record_id_right": "rec_bbdfb57449b847ba98a7fea2b4b2ce14",
+      "normalized_field_states": {
+        "company_name": "different_nonempty",
+        "registration_id": "one_missing",
+        "address": "equal_nonempty",
+        "city": "equal_nonempty",
+        "postcode": "equal_nonempty",
+        "country": "equal_nonempty",
+        "company_name_prefix": "different_nonempty",
+        "informative_name_token": "no_shared_token"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "registration_id:one_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "company_name_prefix:different_nonempty"
+        ],
+        "country_city_name_token": [
+          "informative_name_token:no_shared_token"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_ae70f6f5015a449ba86cd27dfd597efd",
+      "record_id_right": "rec_d27960a4897e4ce58fe30b6d3efc5196",
+      "normalized_field_states": {
+        "company_name": "equal_nonempty",
+        "registration_id": "equal_nonempty",
+        "address": "one_missing",
+        "city": "equal_nonempty",
+        "postcode": "equal_nonempty",
+        "country": "one_missing",
+        "company_name_prefix": "equal_nonempty",
+        "informative_name_token": "equal_nonempty"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "country:one_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "country:one_missing"
+        ],
+        "country_city_name_token": [
+          "country:one_missing"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_b97938acead247028fcc588e49ec6e32",
+      "record_id_right": "rec_ec9353cd8e9a4e7293fca973b6315c55",
+      "normalized_field_states": {
+        "company_name": "different_nonempty",
+        "registration_id": "both_missing",
+        "address": "both_missing",
+        "city": "equal_nonempty",
+        "postcode": "equal_nonempty",
+        "country": "equal_nonempty",
+        "company_name_prefix": "different_nonempty",
+        "informative_name_token": "no_shared_token"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "registration_id:both_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "company_name_prefix:different_nonempty"
+        ],
+        "country_city_name_token": [
+          "informative_name_token:no_shared_token"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_d775e809218d452088cc32c67636ae1c",
+      "record_id_right": "rec_f23ed1fc9b9f4efeb75d2f0c472e2f3b",
+      "normalized_field_states": {
+        "company_name": "different_nonempty",
+        "registration_id": "one_missing",
+        "address": "one_missing",
+        "city": "equal_nonempty",
+        "postcode": "equal_nonempty",
+        "country": "one_missing",
+        "company_name_prefix": "equal_nonempty",
+        "informative_name_token": "equal_nonempty"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "country:one_missing",
+          "registration_id:one_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "country:one_missing"
+        ],
+        "country_city_name_token": [
+          "country:one_missing"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_d972c236db844c06984d6427adaad2f9",
+      "record_id_right": "rec_e9707c9e266a4b90ae28b2f44a76a0ea",
+      "normalized_field_states": {
+        "company_name": "equal_nonempty",
+        "registration_id": "different_nonempty",
+        "address": "equal_nonempty",
+        "city": "different_nonempty",
+        "postcode": "one_missing",
+        "country": "equal_nonempty",
+        "company_name_prefix": "equal_nonempty",
+        "informative_name_token": "equal_nonempty"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "registration_id:different_nonempty"
+        ],
+        "country_postcode_name_prefix": [
+          "postcode:one_missing"
+        ],
+        "country_city_name_token": [
+          "city:different_nonempty"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_e327119fd8954ceaafe2ff5c32a807cc",
+      "record_id_right": "rec_f23ed1fc9b9f4efeb75d2f0c472e2f3b",
+      "normalized_field_states": {
+        "company_name": "equal_nonempty",
+        "registration_id": "one_missing",
+        "address": "one_missing",
+        "city": "equal_nonempty",
+        "postcode": "equal_nonempty",
+        "country": "one_missing",
+        "company_name_prefix": "equal_nonempty",
+        "informative_name_token": "equal_nonempty"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "country:one_missing",
+          "registration_id:one_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "country:one_missing"
+        ],
+        "country_city_name_token": [
+          "country:one_missing"
+        ]
+      }
+    },
+    {
+      "record_id_left": "rec_ec9353cd8e9a4e7293fca973b6315c55",
+      "record_id_right": "rec_f5d92b5574dc4f138960a41b25a744a7",
+      "normalized_field_states": {
+        "company_name": "different_nonempty",
+        "registration_id": "one_missing",
+        "address": "one_missing",
+        "city": "equal_nonempty",
+        "postcode": "equal_nonempty",
+        "country": "equal_nonempty",
+        "company_name_prefix": "different_nonempty",
+        "informative_name_token": "no_shared_token"
+      },
+      "failed_rule_reasons": {
+        "country_registration": [
+          "registration_id:one_missing"
+        ],
+        "country_postcode_name_prefix": [
+          "company_name_prefix:different_nonempty"
+        ],
+        "country_city_name_token": [
+          "informative_name_token:no_shared_token"
+        ]
+      }
+    }
+  ]
+}

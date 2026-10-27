@@ -1,0 +1,36 @@
+{
+  "examples": [
+    {
+      "scenario_id": "example-1",
+      "label": "Same entity with spelling differences",
+      "record_id_left": "in_rec_17fc695a07a04a6e8822e8f36c031199",
+      "record_id_right": "in_rec_9a1de644815e46d1bb8faa1837f8a88b",
+      "expected_outcome": "same legal entity",
+      "expectation_source": "simulation ground truth; educational label, not a model prediction"
+    },
+    {
+      "scenario_id": "example-2",
+      "label": "Same entity with missing details",
+      "record_id_left": "in_rec_4737819096da4dacb2ff5d2a386ecbe0",
+      "record_id_right": "in_rec_371ecd7b27cd413087229389571aa876",
+      "expected_outcome": "same legal entity",
+      "expectation_source": "simulation ground truth; educational label, not a model prediction"
+    },
+    {
+      "scenario_id": "example-3",
+      "label": "Different entities",
+      "record_id_left": "in_rec_bdd640fb06674ad19c80317fa3b1799d",
+      "record_id_right": "in_rec_1a2a73ed562b4f79837459eef50bea63",
+      "expected_outcome": "different legal entities",
+      "expectation_source": "simulation ground truth; educational label, not a model prediction"
+    },
+    {
+      "scenario_id": "example-4",
+      "label": "Related but separate companies",
+      "record_id_left": "in_rec_a9488d990bbb459991ce5dd2b45ed1f0",
+      "record_id_right": "in_rec_ec1b8ca1f91e4d4c9ff49b7889463e85",
+      "expected_outcome": "different legal entities",
+      "expectation_source": "simulation ground truth; educational label, not a model prediction"
+    }
+  ]
+}

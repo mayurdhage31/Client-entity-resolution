@@ -1,0 +1,9 @@
+{
+  "freeze_sha256": "eac4575ea8f451222320bc1d1b2674e2223a9bd961d0dae141f008e5aeb8bf1a",
+  "protected_artifacts_unchanged": 78,
+  "blind_predictions_unchanged_after_evaluation": true,
+  "all_test_nodes_included": true,
+  "no_retraining": true,
+  "no_tuning": true,
+  "no_candidate_regeneration": true
+}

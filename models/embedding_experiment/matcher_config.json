@@ -1,0 +1,59 @@
+{
+  "data_classification": "SYNTHETIC",
+  "stage": 4,
+  "threshold": 0.5,
+  "cache_context": {
+    "model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "preprocessing_version": "stage2-normalized-v1:74d45728f605955f5eea687357e360c0761b9071c3fb11b02ee69b19cc2916c5",
+    "runtime_version": "sentence-transformers=6.2.0;torch=2.14.1+cpu",
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "dimension": 384,
+    "normalize_embeddings": true
+  },
+  "scaler": {
+    "copy": true,
+    "with_mean": true,
+    "with_std": true
+  },
+  "logistic_regression": {
+    "C": 1.0,
+    "class_weight": null,
+    "dual": false,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "l1_ratio": 0.0,
+    "max_iter": 1000,
+    "n_jobs": null,
+    "penalty": "deprecated",
+    "random_state": 42,
+    "solver": "lbfgs",
+    "tol": 0.0001,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "score_interpretation": "uncalibrated model scores",
+  "metadata": {
+    "training_candidates": 1302,
+    "training_class_counts": {
+      "match": 460,
+      "non_match": 842
+    },
+    "batch_size": 32,
+    "cpu_threads": 2,
+    "fit_scope": "training only; pretrained encoder frozen; no searches",
+    "versions": {
+      "python": "3.12.15",
+      "sentence-transformers": "6.2.0",
+      "torch": "2.14.1+cpu",
+      "transformers": "5.20.2",
+      "huggingface-hub": "2.3.0",
+      "tokenizers": "0.23.3",
+      "safetensors": "0.8.0",
+      "scikit-learn": "1.9.1",
+      "numpy": "2.5.4",
+      "pandas": "3.1.0",
+      "joblib": "1.6.0",
+      "rapidfuzz": "3.14.6"
+    }
+  }
+}

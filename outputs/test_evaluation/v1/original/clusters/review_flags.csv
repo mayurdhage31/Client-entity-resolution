@@ -1,0 +1,3 @@
+cluster_id,country_normalized,conflicting_registration_ids,supporting_record_ids,review_reason,membership_changed
+clu_8f0c6af77050f7b618d5f6d5d6679497cb85552fd5f7e214e4bfdc2d07390802,gb,"[""39711202"", ""39711402""]","[""rec_292254f937cc4228820f8fa553fdd1f7"", ""rec_984f541976b44117a10f0001d832c732"", ""rec_9d09cf19a079465a8cc5b7058af263bd""]",different_nonempty_registration_ids_in_same_nonempty_country,False
+clu_9fb9fd2a8a293f2d5cdbd1861eba235c19df1f6252db87fb047877a6d677e23b,gb,"[""27105443"", ""27105448""]","[""rec_49bb1313294d45fc85539a506facc50d"", ""rec_7b2a7f103590403986dd5e19dbe83664"", ""rec_7ee667ded93e4a4daa6a642bfabfa7ef"", ""rec_aac4363f16104c0abfcf214eb0d18df1""]",different_nonempty_registration_ids_in_same_nonempty_country,False

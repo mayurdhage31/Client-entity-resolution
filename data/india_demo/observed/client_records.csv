@@ -1,0 +1,25 @@
+record_id,source_system,company_name,registration_id,address,city,postcode,country
+in_rec_bdd640fb06674ad19c80317fa3b1799d,DEMO_CORE,State Bank of India,DEMO-IN-7041,"101 Demo Learning Road, Sample Finance Park",Mumbai,499901,India
+in_rec_23b8c1e9392446debeb13b9046685257,DEMO_CRM,State Bnak of India,DEMO-IN-7041,"101 Demo Learning Rd., Sample Finance Park",MUMBAI,499901,INDIA
+in_rec_bd9c66b3ad3c4d6d9a3d1fa7bc8960a9,DEMO_OPERATIONS,SBI,DEMO-IN-7041,"101 Demo Learning Rd, Sample Finance Park",Mumbai,499901,
+in_rec_972a846916414f828b9d2434e465e150,DEMO_LEGACY,State Bank of India,,,Mumbai,,India
+in_rec_17fc695a07a04a6e8822e8f36c031199,DEMO_CORE,HDFC Bank Limited,DEMO-IN-8152,"202 Demo Market Road, Sample Commerce Block",Mumbai,499902,India
+in_rec_9a1de644815e46d1bb8faa1837f8a88b,DEMO_CRM,HDFC Bnak Ltd.,DEMO-IN-8152,"202 Demo Market Rd., Sample Commerce Block",MUMBAI,499902,INDIA
+in_rec_b74d0fb132e746298fadc1a606cb0fb3,DEMO_OPERATIONS,HDFC BANK,DEMO-IN-8152,"202 Demo Market Rd, Sample Commerce Block",Mumbai,499902,India
+in_rec_6b65a6a48b8148f6b38a088ca65ed389,DEMO_LEGACY,HDFC Bank,,,Mumbai,,India
+in_rec_4737819096da4dacb2ff5d2a386ecbe0,DEMO_CORE,ICICI Bank Limited,DEMO-IN-9263,"303 Demo Knowledge Avenue, Sample Business Nagar",Hyderabad,599903,India
+in_rec_c241330b01a9471f9e8a774bcf36d58b,DEMO_CRM,ICICI Bnak Limited,DEMO-IN-9263,"303 Demo Knowledge Ave., Sample Business Nagar",HYDERABAD,599903,INDIA
+in_rec_6c307511b2b9437aa8df6ec4ce4a2bbd,DEMO_OPERATIONS,ICICI BANK LTD,DEMO-IN-9263,"303 Demo Knowledge Ave, Sample Business Nagar",Hyderabad,599903,India
+in_rec_371ecd7b27cd413087229389571aa876,DEMO_LEGACY,ICICI Bank,,,Hyderabad,,India
+in_rec_1a2a73ed562b4f79837459eef50bea63,DEMO_CORE,Axis Bank Limited,DEMO-IN-1374,"404 Demo River Road, Sample Accounts Park",Ahmedabad,399904,India
+in_rec_5be6128e18c24797a142ea7d17be3111,DEMO_CRM,Axis Bnak Ltd.,DEMO-IN-1374,"404 Demo River Rd., Sample Accounts Park",AHMEDABAD,399904,INDIA
+in_rec_43b7a3a69a8d4a03980d7b71d8f56413,DEMO_OPERATIONS,AXIS BANK,DEMO-IN-1374,"404 Demo River Rd, Sample Accounts Park",Ahmedabad,399904,India
+in_rec_759cde66bacf43d08b1f9163ce9ff57f,DEMO_LEGACY,,,"404 Demo Rvr Rd, Sample Accounts Park",Ahmedabad,,India
+in_rec_ec1b8ca1f91e4d4c9ff49b7889463e85,DEMO_CORE,Bajaj Finance Limited,DEMO-IN-2485,"505 Demo Finance Road, Sample Learning Park",Pune,499905,India
+in_rec_4b0dbb418d5248f1942c3fe860e7a113,DEMO_CRM,Bajaj Fianance Ltd.,DEMO-IN-2485,"505 Demo Finance Rd., Sample Learning Park",PUNE,499905,INDIA
+in_rec_e2acf72f9e574f7aa0ee89aed453dd32,DEMO_OPERATIONS,BAJAJ FINANCE,DEMO-IN-2485,"505 Demo Finance Rd, Sample Learning Park",Pune,499905,India
+in_rec_3139d32c93cd49bf9c941cf0dc98d2c1,DEMO_LEGACY,Bajaj Finance,,,Pune,,India
+in_rec_a9488d990bbb459991ce5dd2b45ed1f0,DEMO_CORE,Bajaj Finserv Limited,DEMO-IN-3596,"505 Demo Finance Road, Sample Learning Park",Pune,499905,India
+in_rec_fc377a4c4a15444d85e7ce8a3a578a8e,DEMO_CRM,Bajaj Fisnerv Ltd.,DEMO-IN-3569,"505 Demo Finance Rd., Sample Learning Park",PUNE,499905,INDIA
+in_rec_ddd1dfb23b984ef89af61a26146d3f31,DEMO_OPERATIONS,BAJAJ FINSERV,DEMO-IN-3596,"505 Demo Finance Rd, Sample Learning Park",Pune,499905,India
+in_rec_7412b29347294739a14ff3d719db3ad0,DEMO_LEGACY,Bajaj Finserv,,,Pune,,India

@@ -1,0 +1,14 @@
+# Frozen manifests hash file bytes, including line endings. Preserve them on
+# every platform, even when a contributor has core.autocrlf enabled.
+* -text
+* whitespace=cr-at-eol
+*.joblib binary
+
+# Keep the repository language summary focused on the implementation.
+data/** linguist-generated=true
+models/** linguist-generated=true
+outputs/** linguist-generated=true
+reports/** linguist-generated=true
+
+# Self-contained Plotly exports contain bundled third-party JavaScript.
+outputs/views/*.html -diff -whitespace

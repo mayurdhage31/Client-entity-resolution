@@ -1,0 +1,10 @@
+{
+  "command": ".\\.venv\\Scripts\\python.exe -B -m unittest discover -v",
+  "complete_suite_runs": 1,
+  "tests_run": 79,
+  "passed": 79,
+  "failures": 0,
+  "errors": 0,
+  "unit_runtime_seconds": 10.635,
+  "actual_saved_models_retrained": false
+}

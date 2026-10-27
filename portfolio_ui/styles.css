@@ -1,0 +1,19 @@
+/* Static styling only. No record text or entered values are interpolated here. */
+.block-container { max-width: 1280px; padding-top: 1.1rem; padding-bottom: 1.2rem; }
+h1 { font-size: 1.85rem !important; letter-spacing: -0.02em; color: #17324d; }
+h2 { font-size: 1.4rem !important; }
+h3 { font-size: 1.1rem !important; }
+h2, h3 { color: #213e55; letter-spacing: -0.01em; }
+[data-testid="stSidebar"] { border-right: 1px solid #dde7ed; }
+[data-testid="stSidebar"] h2 { font-size: 1.25rem; }
+[data-testid="stMetricValue"] { font-variant-numeric: tabular-nums; color: #145b60; }
+[data-testid="stMetricLabel"] { font-weight: 600; }
+[data-testid="stMetricValue"] { font-size: 1.7rem; }
+[data-testid="stVerticalBlockBorderWrapper"] { border-radius: 14px; }
+[data-testid="stCaptionContainer"] { color: #526579; line-height: 1.5; }
+[data-testid="stDataFrame"] { border-radius: 10px; }
+div.stButton > button, div.stDownloadButton > button { border-radius: 9px; }
+@media (max-width: 800px) {
+  .block-container { padding-top: 1.2rem; padding-left: 1rem; padding-right: 1rem; }
+  h1 { font-size: 1.8rem; }
+}

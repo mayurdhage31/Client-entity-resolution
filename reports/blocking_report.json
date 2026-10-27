@@ -1,0 +1,129 @@
+{
+  "data_classification": "SYNTHETIC",
+  "stage": 2,
+  "seed": 42,
+  "target_split_ratios": {
+    "train": 0.6,
+    "validation": 0.2,
+    "test": 0.2
+  },
+  "split_strategy": "balanced_family_groups_v1",
+  "split_allocation_unit": "corporate-family connected component (including independent entities)",
+  "blocking_configuration": {
+    "name_prefix_length": 4,
+    "minimum_token_length": 4,
+    "excluded_name_tokens": [
+      "and",
+      "the",
+      "co",
+      "company",
+      "corp",
+      "corporation",
+      "inc",
+      "incorporated",
+      "limited",
+      "ltd",
+      "llc",
+      "llp",
+      "plc",
+      "public",
+      "liability",
+      "partnership",
+      "advisory",
+      "capital",
+      "consulting",
+      "group",
+      "holding",
+      "holdings",
+      "industries",
+      "international",
+      "global",
+      "logistics",
+      "partners",
+      "regional",
+      "resources",
+      "service",
+      "services",
+      "solutions",
+      "technology",
+      "trading"
+    ]
+  },
+  "fallback_configuration": {
+    "enabled": true,
+    "company_name_top_k": 5,
+    "company_name_min_score": 80.0,
+    "address_top_k": 3,
+    "address_min_score": 85.0,
+    "scorer": "WRatio",
+    "rapidfuzz_version": "3.14.6",
+    "tie_break": "score descending, record_id ascending",
+    "scope": "within each split; no country/city restriction"
+  },
+  "zero_denominator_policy": "null (undefined) for pair reduction or recall with zero denominator",
+  "split_counts": {
+    "train": {
+      "records": 455,
+      "entities": 179,
+      "corporate_family_groups": 151
+    },
+    "validation": {
+      "records": 148,
+      "entities": 61,
+      "corporate_family_groups": 49
+    },
+    "test": {
+      "records": 154,
+      "entities": 60,
+      "corporate_family_groups": 52
+    }
+  },
+  "blocking_evaluation": {
+    "train": {
+      "record_count": 455,
+      "entity_count": 179,
+      "total_possible_pairs": 103285,
+      "candidate_pairs": 1302,
+      "pair_reduction": 0.9873941036936632,
+      "all_true_duplicate_pairs": 462,
+      "true_duplicate_pairs_retrieved": 460,
+      "missed_true_duplicate_pairs": 2,
+      "candidate_match_count": 460,
+      "candidate_non_match_count": 842,
+      "blocking_recall": 0.9956709956709957,
+      "candidate_pairs_by_rule": {
+        "country_registration": 329,
+        "country_postcode_name_prefix": 353,
+        "country_city_name_token": 305,
+        "fuzzy_name_top_k": 1234,
+        "fuzzy_address_top_k": 34
+      }
+    },
+    "validation": {
+      "record_count": 148,
+      "entity_count": 61,
+      "total_possible_pairs": 10878,
+      "candidate_pairs": 296,
+      "pair_reduction": 0.9727891156462585,
+      "all_true_duplicate_pairs": 140,
+      "true_duplicate_pairs_retrieved": 139,
+      "missed_true_duplicate_pairs": 1,
+      "candidate_match_count": 139,
+      "candidate_non_match_count": 157,
+      "blocking_recall": 0.9928571428571429,
+      "candidate_pairs_by_rule": {
+        "country_registration": 108,
+        "country_postcode_name_prefix": 107,
+        "country_city_name_token": 101,
+        "fuzzy_name_top_k": 267,
+        "fuzzy_address_top_k": 13
+      }
+    }
+  },
+  "test_performance": "Reserved for final evaluation; no test performance metrics calculated.",
+  "validation": {
+    "record_entity_family_split_isolation": "passed",
+    "candidate_pair_uniqueness_and_within_split_endpoints": "passed",
+    "observed_only_cleaning_and_blocking_inputs": "passed"
+  }
+}

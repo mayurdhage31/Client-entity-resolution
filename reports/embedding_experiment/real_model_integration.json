@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "real_pretrained_model": true,
+  "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "dimension": 384,
+  "device": "cpu",
+  "model_preparation": {
+    "model_weights_cache_state": "download_required",
+    "revision_resolution_and_download_seconds": 24.599634499987587,
+    "model_load_seconds": 0.5806757999816909,
+    "cpu_threads": 2,
+    "device": "cpu",
+    "fine_tuning": false
+  },
+  "first_pass": {
+    "unique_nonempty_texts": 4,
+    "cache_hits": 0,
+    "cache_misses": 4,
+    "cache_state": "cold",
+    "batch_size": 32,
+    "cache_read_seconds": 0.00047389999963343143,
+    "embedding_encode_seconds": 0.03766789997462183,
+    "cache_write_seconds": 0.01896790007594973,
+    "total_embedding_preparation_seconds": 0.05710970005020499
+  },
+  "warm_cache_check": {
+    "unique_nonempty_texts": 4,
+    "cache_hits": 4,
+    "cache_misses": 0,
+    "cache_state": "warm",
+    "batch_size": 32,
+    "cache_read_seconds": 0.010615100036375225,
+    "embedding_encode_seconds": 0.0,
+    "cache_write_seconds": 0.0,
+    "total_embedding_preparation_seconds": 0.010615100036375225
+  }
+}

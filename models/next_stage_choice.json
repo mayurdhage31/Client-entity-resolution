@@ -1,0 +1,36 @@
+{
+  "chosen_model": "stage3_logistic_regression",
+  "reason": "validation_f1_tie_keep_simpler",
+  "selection_metric": "validation_f1",
+  "model_path": "models/matcher_pipeline.joblib",
+  "feature_schema": [
+    "company_name_ratio",
+    "company_name_token_sort_ratio",
+    "address_ratio",
+    "address_token_sort_ratio",
+    "registration_id_exact",
+    "country_exact",
+    "city_exact",
+    "postcode_exact",
+    "registration_id_disagreement",
+    "company_name_one_missing",
+    "company_name_both_missing",
+    "registration_id_one_missing",
+    "registration_id_both_missing",
+    "address_one_missing",
+    "address_both_missing",
+    "city_one_missing",
+    "city_both_missing",
+    "postcode_one_missing",
+    "postcode_both_missing",
+    "country_one_missing",
+    "country_both_missing"
+  ],
+  "threshold": 0.5,
+  "pretrained_encoder": null,
+  "validation_f1": {
+    "stage3_logistic_regression": 1.0,
+    "embedding_experiment": 1.0
+  },
+  "test_used": false
+}

@@ -1,0 +1,43 @@
+{
+  "data_classification": "SYNTHETIC",
+  "blocking_configuration": {
+    "name_prefix_length": 4,
+    "minimum_token_length": 4,
+    "excluded_name_tokens": [
+      "and",
+      "the",
+      "co",
+      "company",
+      "corp",
+      "corporation",
+      "inc",
+      "incorporated",
+      "limited",
+      "ltd",
+      "llc",
+      "llp",
+      "plc",
+      "public",
+      "liability",
+      "partnership",
+      "advisory",
+      "capital",
+      "consulting",
+      "group",
+      "holding",
+      "holdings",
+      "industries",
+      "international",
+      "global",
+      "logistics",
+      "partners",
+      "regional",
+      "resources",
+      "service",
+      "services",
+      "solutions",
+      "technology",
+      "trading"
+    ]
+  }
+}

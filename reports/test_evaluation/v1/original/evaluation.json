@@ -1,0 +1,152 @@
+{
+  "data_classification": "SYNTHETIC",
+  "stage": 6,
+  "evaluation_version": "v1",
+  "run_kind": "original held-out evaluation",
+  "completed_at_utc": "2026-10-25T11:45:30.938519+00:00",
+  "freeze_sha256": "eac4575ea8f451222320bc1d1b2674e2223a9bd961d0dae141f008e5aeb8bf1a",
+  "selected_model": "stage3_logistic_regression",
+  "threshold": 0.5,
+  "feature_schema": [
+    "company_name_ratio",
+    "company_name_token_sort_ratio",
+    "address_ratio",
+    "address_token_sort_ratio",
+    "registration_id_exact",
+    "country_exact",
+    "city_exact",
+    "postcode_exact",
+    "registration_id_disagreement",
+    "company_name_one_missing",
+    "company_name_both_missing",
+    "registration_id_one_missing",
+    "registration_id_both_missing",
+    "address_one_missing",
+    "address_both_missing",
+    "city_one_missing",
+    "city_both_missing",
+    "postcode_one_missing",
+    "postcode_both_missing",
+    "country_one_missing",
+    "country_both_missing"
+  ],
+  "metrics": {
+    "blocking": {
+      "record_count": 154,
+      "entity_count": 60,
+      "total_possible_pairs": 11781,
+      "candidate_pairs": 309,
+      "pair_reduction": 0.9737713267125032,
+      "all_true_duplicate_pairs": 157,
+      "true_duplicate_pairs_retrieved": 156,
+      "missed_true_duplicate_pairs": 1,
+      "candidate_match_count": 156,
+      "candidate_non_match_count": 153,
+      "blocking_recall": 0.9936305732484076,
+      "candidate_pairs_by_rule": {
+        "country_registration": 107,
+        "country_postcode_name_prefix": 137,
+        "country_city_name_token": 102,
+        "fuzzy_name_top_k": 283,
+        "fuzzy_address_top_k": 8
+      }
+    },
+    "candidate_classification": {
+      "rule_based": {
+        "precision": 1.0,
+        "recall": 0.8205128205128205,
+        "f1": 0.9014084507042254,
+        "tp": 128,
+        "fp": 0,
+        "tn": 153,
+        "fn": 28,
+        "candidate_class_counts": {
+          "match": 156,
+          "non_match": 153
+        },
+        "predicted_class_counts": {
+          "match": 128,
+          "non_match": 181
+        },
+        "undefined_metrics": []
+      },
+      "logistic_regression": {
+        "precision": 1.0,
+        "recall": 0.967948717948718,
+        "f1": 0.9837133550488599,
+        "tp": 151,
+        "fp": 0,
+        "tn": 153,
+        "fn": 5,
+        "candidate_class_counts": {
+          "match": 156,
+          "non_match": 153
+        },
+        "predicted_class_counts": {
+          "match": 151,
+          "non_match": 158
+        },
+        "undefined_metrics": []
+      }
+    },
+    "end_to_end_direct_pair": {
+      "rule_based": {
+        "end_to_end_direct_pair_recall": 0.8152866242038217,
+        "all_true_duplicate_pairs": 157,
+        "blocking_misses": 1,
+        "classifier_misses_on_candidates": 28,
+        "end_to_end_missed_pairs": 29,
+        "correct_direct_predicted_matches": 128
+      },
+      "logistic_regression": {
+        "end_to_end_direct_pair_recall": 0.9617834394904459,
+        "all_true_duplicate_pairs": 157,
+        "blocking_misses": 1,
+        "classifier_misses_on_candidates": 5,
+        "end_to_end_missed_pairs": 6,
+        "correct_direct_predicted_matches": 151
+      }
+    },
+    "clustering": {
+      "pairwise_scope": "ALL unordered record pairs within this split, including non-candidates",
+      "records": 154,
+      "true_entities": 60,
+      "cluster_count": 61,
+      "singleton_count": 14,
+      "largest_cluster_size": 4,
+      "all_possible_pairs": 11781,
+      "predicted_same_cluster_pairs": 154,
+      "all_true_duplicate_pairs": 157,
+      "tp": 154,
+      "fp": 0,
+      "fn": 3,
+      "tn": 11624,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.9808917197452229,
+      "pairwise_f1": 0.9903536977491961,
+      "overmerged_cluster_count": 0,
+      "overmerged_clusters": [],
+      "fragmented_true_entity_count": 1,
+      "fragmented_true_entities": [
+        {
+          "true_entity_id": "ENT_0132",
+          "predicted_cluster_count": 2,
+          "cluster_ids": [
+            "clu_9e63eae37a57b74d25a558e2d241ff821e10728804c26379de1c2628387be016",
+            "clu_d4582a6f8774a36a93e0cd486e343afdeede68e750391b0b36e8144af81781c1"
+          ]
+        }
+      ],
+      "undefined_metrics": [],
+      "direct_predicted_edges": 151,
+      "inferred_without_direct_edge_pairs": 3,
+      "review_flag_count": 2,
+      "clusters_requiring_review": 2
+    }
+  },
+  "protected_file_count": 78,
+  "unit_tests_passed": 98,
+  "truth_access": "after blind prediction/cluster artifact commit",
+  "undefined_metrics": "null for zero denominators; F1=2TP/(2TP+FP+FN)",
+  "no_training_tuning_or_retrieval_changes": true
+}

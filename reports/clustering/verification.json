@@ -1,0 +1,12 @@
+{
+  "protected_files_unchanged": 57,
+  "all_pairs_independently_enumerated": [
+    "train",
+    "validation"
+  ],
+  "record_split_isolation": "passed",
+  "deterministic_ids": "passed",
+  "edge_threshold_and_provenance": "passed",
+  "self_contained_html": "passed",
+  "test_evaluation": false
+}

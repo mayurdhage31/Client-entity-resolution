@@ -1,0 +1,121 @@
+{
+  "data_classification": "SYNTHETIC",
+  "stage": 4,
+  "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+  "resolved_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "cache_context": {
+    "model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "preprocessing_version": "stage2-normalized-v1:74d45728f605955f5eea687357e360c0761b9071c3fb11b02ee69b19cc2916c5",
+    "runtime_version": "sentence-transformers=6.2.0;torch=2.14.1+cpu",
+    "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "dimension": 384,
+    "normalize_embeddings": true
+  },
+  "versions": {
+    "python": "3.12.15",
+    "sentence-transformers": "6.2.0",
+    "torch": "2.14.1+cpu",
+    "transformers": "5.20.2",
+    "huggingface-hub": "2.3.0",
+    "tokenizers": "0.23.3",
+    "safetensors": "0.8.0",
+    "scikit-learn": "1.9.1",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "joblib": "1.6.0",
+    "rapidfuzz": "3.14.6"
+  },
+  "validation_candidates": 296,
+  "all_true_duplicate_pairs": 140,
+  "blocking_misses": 1,
+  "threshold": 0.5,
+  "comparison": {
+    "stage3_logistic_regression": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 139,
+      "fp": 0,
+      "tn": 157,
+      "fn": 0,
+      "candidate_class_counts": {
+        "match": 139,
+        "non_match": 157
+      },
+      "predicted_class_counts": {
+        "match": 139,
+        "non_match": 157
+      },
+      "blocking_misses": 1,
+      "classifier_misses_on_candidates": 0,
+      "all_true_duplicate_pairs": 140,
+      "end_to_end_direct_pair_recall": 0.9928571428571429,
+      "end_to_end_missed_pairs": 1,
+      "undefined_metrics": []
+    },
+    "embedding_experiment": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 139,
+      "fp": 0,
+      "tn": 157,
+      "fn": 0,
+      "candidate_class_counts": {
+        "match": 139,
+        "non_match": 157
+      },
+      "predicted_class_counts": {
+        "match": 139,
+        "non_match": 157
+      },
+      "blocking_misses": 1,
+      "classifier_misses_on_candidates": 0,
+      "all_true_duplicate_pairs": 140,
+      "end_to_end_direct_pair_recall": 0.9928571428571429,
+      "end_to_end_missed_pairs": 1,
+      "undefined_metrics": []
+    }
+  },
+  "changed_prediction_count": 0,
+  "maximum_absolute_score_change": 0.03613818332104113,
+  "timings": {
+    "model_preparation": {
+      "model_weights_cache_state": "warm",
+      "revision_resolution_and_download_seconds": 0.0022690000478178263,
+      "model_load_seconds": 0.42448249994777143,
+      "cpu_threads": 2,
+      "device": "cpu",
+      "fine_tuning": false
+    },
+    "embeddings": {
+      "unique_nonempty_texts": 609,
+      "cache_hits": 0,
+      "cache_misses": 609,
+      "cache_state": "cold",
+      "batch_size": 32,
+      "cache_read_seconds": 0.04671669995877892,
+      "embedding_encode_seconds": 2.3912071000086144,
+      "cache_write_seconds": 5.071020000032149,
+      "total_embedding_preparation_seconds": 7.5089437999995425
+    },
+    "base_feature_seconds": 0.03181570000015199,
+    "cosine_feature_seconds": 0.10729189997073263,
+    "experimental_fit_seconds": 0.06133460009004921,
+    "stage3_validation_prediction_seconds": 0.002238100045360625,
+    "embedding_validation_prediction_seconds": 0.0059377000434324145
+  },
+  "timing_interpretation": "Single-run CPU wall times. Prediction excludes feature building, encoder load, download and fitting. Embedding encode excludes model download/load and cache I/O. Weights may be warm after the separate real integration check. Not a benchmark.",
+  "selection": {
+    "chosen_model": "stage3_logistic_regression",
+    "reason": "validation_f1_tie_keep_simpler"
+  },
+  "score_interpretation": "uncalibrated model scores; no claim of embedding improvement without measured gain",
+  "test_performance": "Hidden; test candidates/labels never evaluated",
+  "checks": {
+    "stage3_predictions_reproduced": true,
+    "save_load_consistency": true,
+    "training_only_fit": true,
+    "protected_artifacts_unchanged": true
+  }
+}

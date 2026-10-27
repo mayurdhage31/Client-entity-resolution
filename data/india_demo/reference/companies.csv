@@ -1,0 +1,7 @@
+reference_entity_id,company_name,source_url,retrieved_on,verification_note
+PUBLIC-IN-SBI,State Bank of India,https://sbi.bank.in/en/web/customer-care/contact-us,2026-10-26,Official contact page names State Bank of India.
+PUBLIC-IN-HDFC,HDFC Bank Limited,https://www.hdfc.bank.in/about-us/who-we-are,2026-10-26,Official overview states the incorporated name HDFC Bank Limited.
+PUBLIC-IN-ICICI,ICICI Bank Limited,https://www.icicibank.hk/about_us,2026-10-26,Official bank page identifies ICICI Bank Limited as incorporated in India.
+PUBLIC-IN-AXIS,Axis Bank Limited,https://www.axis.bank.in/shareholders-corner/investor-faqs,2026-10-26,Official investor FAQs use the name Axis Bank Limited.
+PUBLIC-IN-BAJAJ-FINANCE,Bajaj Finance Limited,https://www.aboutbajajfinserv.com/finance-about-us,2026-10-26,Official company page names Bajaj Finance Limited and describes its parent.
+PUBLIC-IN-BAJAJ-FINSERV,Bajaj Finserv Limited,https://www.aboutbajajfinserv.com/about-us,2026-10-26,Official company overview identifies Bajaj Finserv Limited.

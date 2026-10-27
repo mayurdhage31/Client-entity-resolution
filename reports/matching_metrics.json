@@ -1,0 +1,162 @@
+{
+  "data_classification": "SYNTHETIC",
+  "stage": 3,
+  "feature_names": [
+    "company_name_ratio",
+    "company_name_token_sort_ratio",
+    "address_ratio",
+    "address_token_sort_ratio",
+    "registration_id_exact",
+    "country_exact",
+    "city_exact",
+    "postcode_exact",
+    "registration_id_disagreement",
+    "company_name_one_missing",
+    "company_name_both_missing",
+    "registration_id_one_missing",
+    "registration_id_both_missing",
+    "address_one_missing",
+    "address_both_missing",
+    "city_one_missing",
+    "city_both_missing",
+    "postcode_one_missing",
+    "postcode_both_missing",
+    "country_one_missing",
+    "country_both_missing"
+  ],
+  "prediction_threshold": 0.5,
+  "score_interpretation": "uncalibrated model scores, not calibrated match probabilities",
+  "fit_scope": "training candidate pairs only; scaler and model fitted once",
+  "undefined_metric_policy": "null for zero denominators; F1 uses 2TP/(2TP+FP+FN)",
+  "test_performance": "Reserved; no test candidate file opened and no test labels used",
+  "package_versions": {
+    "python": "3.12.15",
+    "scikit-learn": "1.9.1",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "rapidfuzz": "3.14.6",
+    "joblib": "1.6.0"
+  },
+  "evaluation": {
+    "train": {
+      "records": 455,
+      "entities": 179,
+      "candidate_pairs": 1302,
+      "candidate_class_counts": {
+        "match": 460,
+        "non_match": 842
+      },
+      "all_true_duplicate_pairs": 462,
+      "blocking_misses": 2,
+      "rule_based": {
+        "precision": 1.0,
+        "recall": 0.8739130434782608,
+        "f1": 0.9327146171693735,
+        "tp": 402,
+        "fp": 0,
+        "tn": 842,
+        "fn": 58,
+        "candidate_class_counts": {
+          "match": 460,
+          "non_match": 842
+        },
+        "predicted_class_counts": {
+          "match": 402,
+          "non_match": 900
+        },
+        "blocking_misses": 2,
+        "classifier_misses_on_candidates": 58,
+        "all_true_duplicate_pairs": 462,
+        "end_to_end_direct_pair_recall": 0.8701298701298701,
+        "end_to_end_missed_pairs": 60,
+        "undefined_metrics": []
+      },
+      "logistic_regression": {
+        "precision": 0.9956709956709957,
+        "recall": 1.0,
+        "f1": 0.9978308026030369,
+        "tp": 460,
+        "fp": 2,
+        "tn": 840,
+        "fn": 0,
+        "candidate_class_counts": {
+          "match": 460,
+          "non_match": 842
+        },
+        "predicted_class_counts": {
+          "match": 462,
+          "non_match": 840
+        },
+        "blocking_misses": 2,
+        "classifier_misses_on_candidates": 0,
+        "all_true_duplicate_pairs": 462,
+        "end_to_end_direct_pair_recall": 0.9956709956709957,
+        "end_to_end_missed_pairs": 2,
+        "undefined_metrics": []
+      }
+    },
+    "validation": {
+      "records": 148,
+      "entities": 61,
+      "candidate_pairs": 296,
+      "candidate_class_counts": {
+        "match": 139,
+        "non_match": 157
+      },
+      "all_true_duplicate_pairs": 140,
+      "blocking_misses": 1,
+      "rule_based": {
+        "precision": 1.0,
+        "recall": 0.8345323741007195,
+        "f1": 0.9098039215686274,
+        "tp": 116,
+        "fp": 0,
+        "tn": 157,
+        "fn": 23,
+        "candidate_class_counts": {
+          "match": 139,
+          "non_match": 157
+        },
+        "predicted_class_counts": {
+          "match": 116,
+          "non_match": 180
+        },
+        "blocking_misses": 1,
+        "classifier_misses_on_candidates": 23,
+        "all_true_duplicate_pairs": 140,
+        "end_to_end_direct_pair_recall": 0.8285714285714286,
+        "end_to_end_missed_pairs": 24,
+        "undefined_metrics": []
+      },
+      "logistic_regression": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 139,
+        "fp": 0,
+        "tn": 157,
+        "fn": 0,
+        "candidate_class_counts": {
+          "match": 139,
+          "non_match": 157
+        },
+        "predicted_class_counts": {
+          "match": 139,
+          "non_match": 157
+        },
+        "blocking_misses": 1,
+        "classifier_misses_on_candidates": 0,
+        "all_true_duplicate_pairs": 140,
+        "end_to_end_direct_pair_recall": 0.9928571428571429,
+        "end_to_end_missed_pairs": 1,
+        "undefined_metrics": []
+      }
+    }
+  },
+  "validation_checks": {
+    "feature_allowlist": "passed",
+    "training_only_scaler_fit": "passed",
+    "save_load_prediction_consistency": "passed",
+    "split_isolation": "passed"
+  }
+}

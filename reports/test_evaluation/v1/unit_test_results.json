@@ -1,0 +1,16 @@
+{
+  "freeze_sha256": "eac4575ea8f451222320bc1d1b2674e2223a9bd961d0dae141f008e5aeb8bf1a",
+  "complete_suite_runs": 1,
+  "started_at_utc": "2026-10-25T11:45:06.786991+00:00",
+  "completed_at_utc": "2026-10-25T11:45:18.168208+00:00",
+  "runtime_seconds": 11.376597099937499,
+  "tests_run": 98,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "expected_failures": 0,
+  "unexpected_successes": 0,
+  "success": true,
+  "unit_log_sha256": "b072930711e715198545c54912f08c870df8268ecf8caed78feef16ebb89bf74",
+  "scope": "complete unit suite; artificial temporary fixtures only, no real test outcomes"
+}

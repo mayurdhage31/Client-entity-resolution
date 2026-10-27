@@ -1,0 +1,9 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+
+# Python model dependencies are intentionally pinned to the saved artifacts.
+# Review upgrades in a separate experiment before changing those pins.

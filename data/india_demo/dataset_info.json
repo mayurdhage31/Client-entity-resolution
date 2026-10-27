@@ -1,0 +1,11 @@
+{
+  "dataset_id": "india_demo_v1",
+  "seed": 42,
+  "disclaimer": "Real public company names; simulated source records, errors, addresses, PIN codes and DEMO-IN identifiers. No actual customer data, genuine bank records, affiliation or endorsement.",
+  "record_count": 24,
+  "simulated_entity_count": 6,
+  "official_sources_retrieved_on": "2026-10-26",
+  "identifier_policy": "All nonempty registration identifiers start DEMO-IN; none are genuine CINs, IFSCs or account IDs",
+  "address_policy": "Invented demonstration addresses and six-digit unverified synthetic PIN codes in Indian cities",
+  "truth_policy": "Separate educational labels, never used for candidates, model features or cluster repair"
+}

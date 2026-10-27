@@ -1,0 +1,135 @@
+{
+  "data_classification": "SYNTHETIC",
+  "stage": 5,
+  "selected_model": "stage3_logistic_regression",
+  "model_path": "models/matcher_pipeline.joblib",
+  "threshold": 0.5,
+  "feature_schema": [
+    "company_name_ratio",
+    "company_name_token_sort_ratio",
+    "address_ratio",
+    "address_token_sort_ratio",
+    "registration_id_exact",
+    "country_exact",
+    "city_exact",
+    "postcode_exact",
+    "registration_id_disagreement",
+    "company_name_one_missing",
+    "company_name_both_missing",
+    "registration_id_one_missing",
+    "registration_id_both_missing",
+    "address_one_missing",
+    "address_both_missing",
+    "city_one_missing",
+    "city_both_missing",
+    "postcode_one_missing",
+    "postcode_both_missing",
+    "country_one_missing",
+    "country_both_missing"
+  ],
+  "clustering_method": "NetworkX connected components on undirected direct match edges",
+  "transitivity": "A-B and B-C direct matches imply shared A-C cluster membership, not a direct A-C prediction.",
+  "review_policy": "Observed registration conflicts flag review only; never change cluster membership.",
+  "approval_status": "Predicted clusters are not approved record merges",
+  "metrics_scope": "Cluster pairwise metrics across all record pairs; separate from classifier metrics and blocking recall",
+  "evaluation": {
+    "train": {
+      "pairwise_scope": "ALL unordered record pairs within this split, including non-candidates",
+      "records": 455,
+      "true_entities": 179,
+      "cluster_count": 178,
+      "singleton_count": 43,
+      "largest_cluster_size": 7,
+      "all_possible_pairs": 103285,
+      "predicted_same_cluster_pairs": 474,
+      "all_true_duplicate_pairs": 462,
+      "tp": 462,
+      "fp": 12,
+      "fn": 0,
+      "tn": 102811,
+      "pairwise_precision": 0.9746835443037974,
+      "pairwise_recall": 1.0,
+      "pairwise_f1": 0.9871794871794872,
+      "overmerged_cluster_count": 1,
+      "overmerged_clusters": [
+        {
+          "cluster_id": "clu_fd70a1fffbaef1b8aa2d835184682f9cc67ea6670e1aaf4af98980fb075a4ee1",
+          "record_count": 7,
+          "true_entity_count": 2,
+          "true_entity_ids": [
+            "ENT_0049",
+            "ENT_0050"
+          ]
+        }
+      ],
+      "fragmented_true_entity_count": 0,
+      "fragmented_true_entities": [],
+      "undefined_metrics": [],
+      "direct_predicted_edges": 462,
+      "inferred_without_direct_edge_pairs": 12,
+      "review_flag_count": 13,
+      "clusters_requiring_review": 13
+    },
+    "validation": {
+      "pairwise_scope": "ALL unordered record pairs within this split, including non-candidates",
+      "records": 148,
+      "true_entities": 61,
+      "cluster_count": 61,
+      "singleton_count": 16,
+      "largest_cluster_size": 4,
+      "all_possible_pairs": 10878,
+      "predicted_same_cluster_pairs": 140,
+      "all_true_duplicate_pairs": 140,
+      "tp": 140,
+      "fp": 0,
+      "fn": 0,
+      "tn": 10738,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 1.0,
+      "pairwise_f1": 1.0,
+      "overmerged_cluster_count": 0,
+      "overmerged_clusters": [],
+      "fragmented_true_entity_count": 0,
+      "fragmented_true_entities": [],
+      "undefined_metrics": [],
+      "direct_predicted_edges": 139,
+      "inferred_without_direct_edge_pairs": 1,
+      "review_flag_count": 3,
+      "clusters_requiring_review": 3
+    }
+  },
+  "validation_example": {
+    "file": "validation_duplicate_cluster.html",
+    "displayed_record_ids": [
+      "rec_1687819b8fd44278b332d3ab92f77072",
+      "rec_bf6602259a8642f5815f2099424f8429",
+      "rec_d40666259faa418081a069a24b37617d",
+      "rec_d8a712cb837442738c70755128815cd9"
+    ],
+    "full_component_size": 4,
+    "displayed_direct_edges": 5,
+    "uses_truth_labels": false
+  },
+  "supplied_reference_hierarchy": {
+    "file": "reference_corporate_hierarchy.html",
+    "label": "Supplied synthetic relationships; not inferred by the matching model",
+    "entity_nodes": 60,
+    "supplied_relationship_edges": 48,
+    "direction": "parent_to_child",
+    "uses_record_truth_mapping": false,
+    "uses_predicted_clusters": false
+  },
+  "previous_metrics_unchanged": [
+    "reports/matching_metrics.json",
+    "reports/blocking_report.json"
+  ],
+  "test_performance": "Hidden; no test records clustered or evaluated",
+  "undefined_metric_policy": "null for zero denominators; F1=2TP/(2TP+FP+FN)",
+  "preserved_file_count": 57,
+  "package_versions": {
+    "networkx": "3.7",
+    "plotly": "7.1.0",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0"
+  }
+}

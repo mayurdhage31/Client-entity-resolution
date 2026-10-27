@@ -1,0 +1,11 @@
+{
+  "freeze_sha256": "eac4575ea8f451222320bc1d1b2674e2223a9bd961d0dae141f008e5aeb8bf1a",
+  "status": "predictions/components/flags saved BEFORE accessing test entity labels",
+  "label_free_output_sha256": {
+    "blind_candidate_predictions.csv": "336e8a5a1701c9e128980c89e513646315529170f74ef28bb8d7003b7e92fb04",
+    "clusters/cluster_membership.csv": "4c20df88e2a2a82f971052b998e4f1074ababaeeef6931242fa900ca0bf2e289",
+    "clusters/cluster_summary.csv": "11a0216db943089849fd82481aa1da28fc28528349f5c4b3185f92524b651fa6",
+    "clusters/direct_edges.csv": "8115d6e674b3d41dbe384f144b69d5d658d38238b662da3d76210544632f2fd8",
+    "clusters/review_flags.csv": "d121dd9524faaffd1bf034028e35c23501912b671f21723ca87f7613a7060c47"
+  }
+}

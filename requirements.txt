@@ -1,0 +1,12 @@
+# Portfolio app, Python 3.12. Versions match the saved model environment.
+# No torch, sentence-transformers, downloaded weights, Faker or paid APIs required.
+# The optional Stage 4 experiment has separate requirements-embeddings.txt.
+streamlit==1.66.1
+pandas==3.1.0
+numpy==2.5.4
+rapidfuzz==3.14.6
+scikit-learn==1.9.1
+scipy==1.18.1
+joblib==1.6.0
+networkx==3.7
+plotly==7.1.0

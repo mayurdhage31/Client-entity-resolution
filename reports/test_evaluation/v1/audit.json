@@ -1,0 +1,28 @@
+{
+  "data_classification": "SYNTHETIC",
+  "completed_at_utc": "2026-10-25T11:48:04.462746+00:00",
+  "freeze_sha256": "eac4575ea8f451222320bc1d1b2674e2223a9bd961d0dae141f008e5aeb8bf1a",
+  "protected_artifacts_unchanged": 78,
+  "complete_unit_suite_runs": 1,
+  "unit_tests_passed_before_evaluation": 98,
+  "real_model_evaluation_runs": 1,
+  "audit_method": "saved CSV/count/hash checks only; no pipeline rescoring or fitting",
+  "test_records": 154,
+  "all_unordered_pairs_independently_enumerated": 11781,
+  "candidate_confusions_verified": [
+    "rule_based",
+    "logistic_regression"
+  ],
+  "blocking_denominators_and_miss_separation": "passed",
+  "cluster_confusion_verified": {
+    "tn": 11624,
+    "tp": 154,
+    "fn": 3
+  },
+  "singleton_retention_and_deterministic_ids": "passed",
+  "edges_threshold_and_provenance": "passed",
+  "original_reports_and_outputs_match_completion_commit": true,
+  "label_free_predictions_unchanged_after_truth_join": true,
+  "freeze_tests_and_run_order_verified": true,
+  "review_flags_leave_membership_unchanged": true
+}

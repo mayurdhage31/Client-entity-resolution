@@ -1,0 +1,36 @@
+{
+  "rule_based": {
+    "false_positives": {
+      "count": 0,
+      "file": "errors/rule_based_false_positives.csv"
+    },
+    "false_negatives": {
+      "count": 28,
+      "file": "errors/rule_based_false_negatives.csv"
+    }
+  },
+  "logistic_regression": {
+    "false_positives": {
+      "count": 0,
+      "file": "errors/logistic_regression_false_positives.csv"
+    },
+    "false_negatives": {
+      "count": 5,
+      "file": "errors/logistic_regression_false_negatives.csv"
+    }
+  },
+  "blocking_misses": {
+    "count": 1,
+    "file": "errors/blocking_misses.csv"
+  },
+  "clustering": {
+    "false_positives": {
+      "count": 0,
+      "file": "errors/cluster_false_positives.csv"
+    },
+    "false_negatives": {
+      "count": 3,
+      "file": "errors/cluster_false_negatives.csv"
+    }
+  }
+}

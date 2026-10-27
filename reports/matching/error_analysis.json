@@ -1,0 +1,36 @@
+{
+  "data_classification": "SYNTHETIC",
+  "validation_errors": {
+    "rule_based": {
+      "false_positives": {
+        "count": 0,
+        "file": "reports/matching/validation_rule_based_false_positives.csv"
+      },
+      "false_negatives": {
+        "count": 23,
+        "file": "reports/matching/validation_rule_based_false_negatives.csv"
+      }
+    },
+    "logistic_regression": {
+      "false_positives": {
+        "count": 0,
+        "file": "reports/matching/validation_logistic_regression_false_positives.csv"
+      },
+      "false_negatives": {
+        "count": 0,
+        "file": "reports/matching/validation_logistic_regression_false_negatives.csv"
+      }
+    }
+  },
+  "blocking_misses": {
+    "train": {
+      "count": 2,
+      "file": "reports/matching/blocking_misses_train.csv"
+    },
+    "validation": {
+      "count": 1,
+      "file": "reports/matching/blocking_misses_validation.csv"
+    }
+  },
+  "interpretation": "Classifier false negatives are retrieved positives predicted non-match. Unretrieved true pairs are listed separately, never fitted or scored. These reports are evaluation artifacts, not feature inputs."
+}

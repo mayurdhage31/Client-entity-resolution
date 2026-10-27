@@ -1,0 +1,18 @@
+{
+  "data_classification": "SYNTHETIC",
+  "protected_input_sha256": {
+    "generate_data.py": "a3c268cb2e1919196bb78e7bfd845687bae15cedab1fd36de40e3952a300c23d",
+    "data/raw/client_records.csv": "966fa63640319c9438d3c4b7d7025d96115441fb060990469544d5f5f06f0faa",
+    "data/ground_truth/record_entity_map.csv": "c9340a977a44bb9022d1d0463a286584e764666fb806e71d6c9d56d16ab2b7ce",
+    "data/reference/parent_relationships.csv": "e6b909410aa25caf53c86858f5ca40ebd7bd8872cd2eb5315a48b01a6e1322dc",
+    "data/splits/record_splits.csv": "371bfbaf045604a9ad2006481da6ed254449f6d6b71b2e3e9207231985c1b555"
+  },
+  "baseline_artifact_sha256": {
+    "reports/blocking_baseline/prepare_candidates.py": "19a18090bb6b83b3ba07190ae4f063ff52fbda314783abb50598cbd5ef0f456f",
+    "reports/blocking_baseline/blocking_report.json": "ac2a5f493841f5ea36cb05b0b652ce78df8ed512f6f4ba28bed4294608cb8dee",
+    "data/processed/baseline/candidate_pairs_train.csv": "afe7328d0ca570cd18cc257bc7b9f8278ea3422e1f884facd3047f1d4b746c60",
+    "data/processed/baseline/candidate_pairs_validation.csv": "15b1ce8657a4d2884a9298df9b2497e8b0501cb1a70e4147811c1509587bf687",
+    "data/processed/baseline/candidate_pairs_test.csv": "add73153ceec0eed85a2064415609ef859746d3560fc62db3ad8189845beeae3",
+    "reports/blocking_baseline/blocking_configuration.json": "419abe7edb6ff82c9453666b7e925856218442454a256f10ac07b1ad0b2c8d79"
+  }
+}

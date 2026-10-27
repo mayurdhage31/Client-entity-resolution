@@ -1,0 +1,2 @@
+cluster_id,country_normalized,conflicting_registration_ids,supporting_record_ids,review_reason,membership_changed
+clu_3b6a61067145c6142fc08e3605f7a86cbee36f6e424201eb205974ae5595924a,india,"[""demoin2485"", ""demoin3569"", ""demoin3596""]","[""in_rec_4b0dbb418d5248f1942c3fe860e7a113"", ""in_rec_a9488d990bbb459991ce5dd2b45ed1f0"", ""in_rec_ddd1dfb23b984ef89af61a26146d3f31"", ""in_rec_e2acf72f9e574f7aa0ee89aed453dd32"", ""in_rec_ec1b8ca1f91e4d4c9ff49b7889463e85"", ""in_rec_fc377a4c4a15444d85e7ce8a3a578a8e""]",different_nonempty_registration_ids_in_same_nonempty_country,False

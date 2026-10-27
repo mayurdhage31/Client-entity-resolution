@@ -1,0 +1,10 @@
+{
+  "command": ".\\.venv\\Scripts\\python.exe -B -m unittest discover -v",
+  "complete_suite_runs": 1,
+  "tests_run": 58,
+  "passed": 58,
+  "failures": 0,
+  "errors": 0,
+  "network_downloads_required_by_unit_tests": false,
+  "unit_fixture_vectors_used_only_in_temporary_test_directories": true
+}

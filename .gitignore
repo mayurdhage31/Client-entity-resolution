@@ -1,0 +1,39 @@
+﻿# Local Python environment
+.venv/
+venv/
+
+# Python and tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+# Stage 4 keeps pretrained weights, embedding vectors, and uv downloads in .cache/.
+.huggingface/
+*.safetensors
+pytorch_model*.bin
+.ipynb_checkpoints/
+.coverage
+.coverage.*
+htmlcov/
+
+# Environment variables and credentials
+.env
+.env.*
+credentials*
+*credentials*.json
+service-account*.json
+*service_account*.json
+secrets.*
+.secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Windows files
+Thumbs.db
+Desktop.ini
+
+# Keep generated synthetic CSVs available for the portfolio.
